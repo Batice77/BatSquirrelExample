@@ -15,6 +15,7 @@ class a {
 	lol = 5
 	function pp(myArray) 
 	{
+		print(myArray);
 		foreach (item in myArray) {
 			print(item);
 		}
@@ -31,8 +32,7 @@ print(b.lol)
 
 printMap <- function(map) {
 	foreach(idx,val in map) {
-		print(idx);
-		print(val);
+		print(idx+" "+val);
 	}
 }
 
