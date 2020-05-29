@@ -3,13 +3,31 @@ bb--;
 if(bb<5) return false;
 return true;*/
 
-a <- {
+/*a <- {
 	pp = function(bool, bo4) 
 	{
 		print(bool);
 		print(bo4);
 	}
+}*/
+
+class a {
+	lol = 5
+	function pp(myArray) 
+	{
+		foreach (item in myArray) {
+			print(item);
+		}
+	}
 }
+
+class c {
+	lol = 10
+}
+
+b<-a()
+b=c()
+print(b.lol)
 
 i <- 0
 name <- "l'ami"
