@@ -29,6 +29,13 @@ b<-a()
 b=c()
 print(b.lol)
 
+printMap <- function(map) {
+	foreach(idx,val in map) {
+		print(idx);
+		print(val);
+	}
+}
+
 i <- 0
 name <- "l'ami"
 return "Bonjour "+name
