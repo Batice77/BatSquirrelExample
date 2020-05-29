@@ -1,0 +1,2 @@
+print(name)
+return ++i;
