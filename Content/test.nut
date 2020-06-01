@@ -36,6 +36,12 @@ printMap <- function(map) {
 	}
 }
 
+t <- {
+	lol = 5
+}
+
+arr <- [51,512,546532,21]
+
 i <- 0
 name <- "l'ami"
 return "Bonjour "+name
