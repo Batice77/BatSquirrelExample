@@ -39,6 +39,8 @@ printMap <- function(map) {
 t <- {
 	lol = 5
 }
+print(t);
+return t;
 
 arr <- [51,512,546532,21]
 
