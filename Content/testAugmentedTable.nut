@@ -1,9 +1,10 @@
 ::print("xD");
-
+//print(lol);
 trop <- "bien";
 
 function x() {
 	print(trop);
+	print(this);
 	foreach(key, val in x.getinfos())
 	{
 		print(key+" "+val);
@@ -21,5 +22,11 @@ function x() {
 		}
 	}
 }
+
+function _tostring() {
+	return "loqqsdqsd";
+}
+
+print(this);
 
 return "lol";
