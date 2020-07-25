@@ -18,6 +18,10 @@
 		{
 			"Name": "RiderLink",
 			"Enabled": true
+		},
+		{
+			"Name": "FunctionalTestingEditor",
+			"Enabled": true
 		}
 	]
 }
