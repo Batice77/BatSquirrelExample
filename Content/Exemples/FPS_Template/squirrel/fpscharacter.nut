@@ -38,6 +38,9 @@ Projectile.vel <- 3000;
 
 function onFire()
 {
+
+ print(FPSCharacter());
+
 	if(character) {
 		character.playFireAnimAndSound();
 		
