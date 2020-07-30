@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright 2020 - Florent WASSEN
 
 #pragma once
 
@@ -7,7 +7,7 @@
 #include "MyActor.generated.h"
 
 UCLASS()
-class BATSQUIRRELEXEMPLE_API AMyActor : public AActor
+class BATSQUIRRELEXAMPLE_API AMyActor : public AActor
 {
 	GENERATED_BODY()
 	

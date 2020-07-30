@@ -1,10 +1,10 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright 2020 - Florent WASSEN
 
 using UnrealBuildTool;
 
-public class BatSquirrelExemple : ModuleRules
+public class BatSquirrelExample : ModuleRules
 {
-	public BatSquirrelExemple(ReadOnlyTargetRules Target) : base(Target)
+	public BatSquirrelExample(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
