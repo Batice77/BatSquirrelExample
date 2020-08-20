@@ -16,6 +16,17 @@ class BATSQUIRRELEXAMPLE_API USimpsonsVM : public USquirrelVM
 public:
 	USimpsonsVM();
 
+	UPROPERTY()
+	UUserWidget* PageWidget;
+
 	UFUNCTION()
-	void HttpGet(FString Url, FSquirrelValue SuccesCallback, FSquirrelValue ErrorCallback);
+	void HttpGet(FString Url, FSquirrelValue SuccessCallback, FSquirrelValue ErrorCallback);
+	
+	static UTexture2D* ArrayUInt8ToTexture(TArray<uint8> Array);
+
+	UFUNCTION(BlueprintCallable)
+	void SetPageWidget(UUserWidget* Widget);
+	
+	UFUNCTION()
+	void AddQuoteToWidget(FSquirrelValue SimpsonsQuote);
 };

@@ -16,3 +16,7 @@ It is inspired of [LuaMachine](https://www.unrealengine.com/marketplace/en-US/pr
 
 ## Require:
 - Unreal Engine 4.25+
+
+## Exemples:
+- FPS (In BP)
+- WebAPI (In C++, by using https://thesimpsonsquoteapi.glitch.me/)
