@@ -1,7 +1,7 @@
 httpGet("https://thesimpsonsquoteapi.glitch.me/quotes?count=5",
 	function(content) {
 		local json = compilestring("return "+content)();
-		foreach(_, result in json) {
+		foreach(result in json) {
 			local simQuote = SimpsonsQuote(result);
 			httpGet(simQuote.imageURL(),
 				function(content) {

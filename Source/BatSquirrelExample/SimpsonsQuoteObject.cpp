@@ -13,10 +13,10 @@ void USimpsonsQuoteObject::Constructor(FSquirrelValue Table)
 {
     if(Table.GetType() != ESquirrelValueType::Table) return;
 
+    // Extract datas from the table
     Quote = Table.GetSlot("quote").ToString();
     CharacterName = Table.GetSlot("character").ToString();
     CharacterDirection = Table.GetSlot("characterDirection").ToString();
-
     ImageURL = Table.GetSlot("image").ToString();
 }
 

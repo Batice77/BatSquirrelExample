@@ -28,21 +28,22 @@ void USimpsonsVM::HttpGet(FString Url, FSquirrelValue SuccessCallback, FSquirrel
         if(bSuccess)
         {
             FSquirrelValue SuccessFunc = SuccessCallback;
-            FromSquirrelValue(SuccessFunc);
-            PushRootTable(); // This
+            FromSquirrelValue(SuccessFunc); // Put the Function in the stack
+            PushRootTable(); // Put the roottable in the stack (it will be our this)
             FSquirrelValue Content;
+            // Content as a String if it's in utf-8 or as Bytes in case of an image
             if(Response->GetContentType().EndsWith("utf-8")) Content = FSquirrelValue(Response->GetContentAsString());
             else Content = FSquirrelValue(Response->GetContent());
             FromSquirrelValue(Content);
-            Call(2);
+            Call(2); // Call the function with 2 parameter (roottable as this and the value)
             Pop(); // Pop SuccessFunc
         }
         else
         {
             FSquirrelValue ErrorFunc = ErrorCallback;
-            FromSquirrelValue(ErrorFunc);
-            PushRootTable(); // This
-            Call(1);
+            FromSquirrelValue(ErrorFunc); // Put the Function in the stack
+            PushRootTable(); // Put the roottable in the stack (it will be our this)
+            Call(1); // Call the function with 1 parameter (roottable as this)
             Pop(); // Pop ErrorFunc
         }
     });
@@ -108,7 +109,8 @@ void USimpsonsVM::AddQuoteToWidget(FSquirrelValue SimpsonsQuote)
     USimpsonsQuoteObject* SimpsonsQuoteObject = Cast<USimpsonsQuoteObject>(SimpsonsQuote.ToObject());
 
     if(!SimpsonsQuoteObject) return;
-    
+
+    // Call AddQuote on Widget
     UFunction* Func = PageWidget->FindFunction(TEXT("AddQuote"));
     if (Func)
     {

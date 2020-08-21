@@ -1,9 +1,6 @@
-::print("xD");
-//print(lol);
-trop <- "bien";
+::print("Hello Augmented Table");
 
 function x() {
-	print(trop);
 	print(this);
 	foreach(key, val in x.getinfos())
 	{
@@ -24,9 +21,8 @@ function x() {
 }
 
 function _tostring() {
-	return "loqqsdqsd";
+	return "TheAugmentedTable";
 }
 
 print(this);
-
-return "lol";
+return this;

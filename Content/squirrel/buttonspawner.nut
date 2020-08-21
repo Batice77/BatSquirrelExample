@@ -1,1 +1,0 @@
-spawnShape(pos.add(Vector(100,0,200)));
