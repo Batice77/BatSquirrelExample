@@ -12,7 +12,6 @@ It is inspired of [LuaMachine](https://www.unrealengine.com/marketplace/en-US/pr
 
 ## Platforms (at the moment):
 - Win64
-- Win32
 
 ## Require:
 - Unreal Engine 4.25+
