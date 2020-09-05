@@ -17,12 +17,13 @@
 	],
 	"Plugins": [
 		{
-			"Name": "RiderLink",
+			"Name": "FunctionalTestingEditor",
 			"Enabled": true
 		},
 		{
-			"Name": "FunctionalTestingEditor",
-			"Enabled": true
+			"Name": "BatSquirrel",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/e172cbada00e4dca8f6418ee3ad1c5b7"
 		}
 	]
 }
